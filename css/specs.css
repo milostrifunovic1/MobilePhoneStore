@@ -59,13 +59,14 @@
         display: none;
     }
     .specpic{
-	display:flex;	
+	display:flex;
+	width: 100%;    
     }
     .specpic > img{
         margin: auto;
         padding-top: 20px;
         padding-bottom: 15px;
-        width: 90%;
+        width: 95%;
     }
 
 }
