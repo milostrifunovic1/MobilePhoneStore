@@ -196,7 +196,7 @@ body {
 @media only screen and (max-width: 600px){
     body{
         font-family: 'Montserrat';
-        background: url(../img/space2.jpg) fixed;
+        background: url(../img/space2.jpg) center fixed;
     }
     .jumbotron > #pic{
         display: none;
