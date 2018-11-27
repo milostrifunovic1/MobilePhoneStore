@@ -1,0 +1,70 @@
+
+.tabela {
+	width:570px;
+	display:inline-block;
+	padding-right:15px;
+	padding-top: 20px;
+}
+
+.slike {
+	width:570px;
+	height:850px;
+	vertical-align:top;
+	display:inline-block;
+	float:right;
+	padding-left:15px;
+	padding-top: 20px;
+}
+
+.slike > a > img {
+	width:270px;
+	padding-left:10px;
+	padding-top:10px;
+	opacity:0.9;
+	transition: transform 0.25s;
+}
+.slike > a > img:hover{
+	opacity:1.0;
+	transform: scale(1.05);
+}
+.slike1 {
+	font-size:13px; 
+	color:#FFFFFF; 
+	background-color:#888888; 
+	font-weight:bold; 
+	border-top:1px solid #666666;
+	border-bottom:3px solid #666666;
+	text-align: center;
+}
+.specpic{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+
+    .slike{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 3px;
+
+    }
+    .slike > a > img {
+        width:45%;
+        margin: auto;
+        padding: 3px;
+                
+    }
+    .tabela{
+        display: none;
+        
+    }
+    .specpic{
+        display: flex;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+}

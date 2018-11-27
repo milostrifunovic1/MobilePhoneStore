@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mobile Store</title>
+  <link rel="icon" type="image/png" sizes="96x96" href="logo/favicon-96x96.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="../css/main.css" type="text/css" rel="stylesheet">
+
+  
+</head>
+<body class="body">
+<div class="se-pre-con"></div>
+<div class="jumbotron">
+  <img src="../img/mobilephone.png" height="150">
+  <img id="pic" src="../img/x.png" height="250">
+  <img id="pic" src="../img/p20series.png" height="250"> 
+  <img id="pic" src="../img/s9+.png" height="250">
+  
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fas fa-bars"></i>                       
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">	
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="../index.html">Uređaji</a></li>
+        <li><a href="">Kontakt</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+		<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="bck2" class="background">
+	<div id="cont2" class="container">  
+		<div class="adresa">
+			<h1>BEOGRAD </h1>
+			<h3>Prodavnica 1</h3>
+			<div>
+				<p>Adresa: Bulevar Kralja Aleksandra 236, 11000 Beograd.</p>
+				<p>Radno vreme: ponedeljak - petak od 09 do 21h.</p>
+				<p>Subotom od 9h do 18h.</p>
+				<p>Nedeljom ne radimo.</p>
+				<p>Kontakt telefon: 011/555-333.</p>
+			</div><br>
+			<h3>Prodavnica 2</h3>
+			<div>
+				<p>Adresa: Bulevar Umetnosti 4, TC Merkator, 11070 Novi Beograd.</p>
+				<p>Radno vreme: ponedeljak - petak od 09 do 21h.</p>
+				<p>Subotom od 9h do 20h.</p>
+				<p>Nedeljom ne radimo.</p>
+				<p>Kontakt telefon: 011/123-45-67.</p>
+			</div>
+		</div>
+		<div class="mapa">
+			<div id="map"></div>
+					<script>
+					function myMap() {
+					var prodavnica1 = {lat: 44.7986903, lng: 20.49112};
+					var prodavnica2 = {lat: 44.820648, lng: 20.415240};
+					var centar = {lat: 44.818092, lng: 20.4597879}
+
+					var map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: centar});	
+			
+					var marker = new google.maps.Marker({position: prodavnica1, map: map});
+					var marker = new google.maps.Marker({position: prodavnica2, map: map});
+					}
+					</script>
+
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIkcGZxFQJsv9h-mp549vADd4yLHrryjo&callback=myMap"></script>
+
+		</div>
+	</div><br>
+
+	<br><br>
+</div>
+
+<div id="footer" class="container-fluid text-center">
+			
+				<p><b>Prodavnica 1 - </b> Adresa: Bulevar Kralja Aleksandra 236, 11000 Beograd.
+				Radno vreme: ponedeljak - petak od 09 do 21h.
+				Subotom od 9h do 18h.
+				Nedeljom ne radimo.
+				Kontakt telefon: 011/555-333.</p>
+				
+				<p><b>Prodavnica 2 - </b> Adresa: Bulevar Umetnosti 4, TC Merkator, 11070 Novi Beograd.
+				Radno vreme: ponedeljak - petak od 09 do 21h.
+				Subotom od 9h do 20h.
+				Nedeljom ne radimo.
+				Kontakt telefon: 011/123-45-67.</p>
+			
+</div>
+<script src="../main.js"></script> 
+</body>
+</html>

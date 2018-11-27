@@ -1,0 +1,318 @@
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader-128x/InferiorReasonableAvians-size_restricted.gif) center no-repeat #000;
+}
+
+
+.specifikacije{
+    display: none;
+}
+.container-fluid{
+    width: 1300px;
+}
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+	position: sticky;
+	top:0;
+	z-index:1;
+    background: rgba(0, 0, 0, 0.8);
+}
+#myNavbar{
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    text-align: center;
+    
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+	font-size:15px;
+	font-weight:bold;
+}
+.fas, .fab{
+    font-size: 22px;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	color: red;
+	
+}
+
+.jumbotron {
+		margin: 0;
+		padding: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		text-align: center;
+		width:100%;
+		height:100%;
+}
+	
+.navbar-inverse{
+		
+		list-style-type: none;
+		float: left;
+		display: block;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		
+}
+
+#footer {
+    position: relative;
+    padding-top: 15px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.panel {
+	margin-top:60px;
+    border-color: rgba(66, 79, 83, 0.95);
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.panel-primary > .panel-heading{
+	background: rgba(66, 79, 83, 0.95);
+	font-size:15px;
+	color: #fff;
+    border-color: red;
+}
+.panel-primary1 > .panel-heading{
+	background: rgba(66, 79, 83, 0.95);
+	font-size:15px;
+	color: #fff;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: url(../img/space2.jpg) no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size:cover;
+	width:100%;
+	height:100%;
+}
+.panel-primary {
+    color: #000;
+	background-color:rgba(0, 0, 0, 0.4);
+	transition: transform 0.2s;
+    
+}
+
+.panel-primary:hover {
+	opacity:1.0;
+	background-color:rgba(0, 0, 0, 0.85);
+	color: red;
+	font-weight:bold;
+	transform: scale(1.05);
+}
+.panel-body > img {
+    transition: transform 0.2s;
+}
+.panel-body > img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.panel-primary1 {
+    color: #000;
+	background: rgba(255, 255, 255, 0.6);
+	transition: transform 0.2s;
+}
+
+.panel-primary1:hover {
+	opacity:1.0;
+	color: red;
+	font-weight:bold;
+	transform: scale(1.05);
+}	
+
+#pic{
+	margin-left:20px;
+	margin-right:20px;
+}
+#bck3{
+    display: none;
+}
+#back {
+    display: none;
+    cursor: pointer;
+    margin: auto;
+}
+#backbtn{
+    margin: auto;
+}
+.adresa {
+	width: 35%;
+	height:40%;
+	margin-top:40px;
+	display:inline-block;
+	padding:20px;
+	color:grey;
+	background-color:rgba(0, 0, 0, 0.75);
+}
+.adresa:hover{
+	background-color:rgba(0, 0, 0, 0.92);
+	color:white;
+}
+
+.adresa h1, h3{
+	font-weight:bold;
+}
+
+.adresa p{
+	font-size:15px;
+}
+
+.mapa {
+	margin-top:40px;
+	display:inline-block;
+	vertical-align:top;
+	float:right;
+	opacity:0.85;
+}
+
+.mapa:hover{
+	opacity:1;
+}
+#map{
+	width:700px;
+	height:568px;
+	background:transparent;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        font-family: 'Montserrat';
+        background: url(../img/space2.jpg) fixed;
+	    background-size: cover;
+    }
+    .jumbotron > #pic{
+        display: none;
+    }
+    .jumbotron > img{
+        position: relative;
+        margin: auto;
+        height: 200px;
+    }
+    .background{
+        position: relative;
+        width: 90%;
+        margin: auto;
+    }
+    #myNavbar{
+        width: 90%;
+        margin: auto;
+    }
+    .container-fluid{
+        width: 100%;
+        margin: auto;
+    }
+    .panel-primary, .panel-primary1 {
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .panel-primary > .panel-heading{
+        font-size: 12px;
+        border-color: red;
+    }
+    #cont2 {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        
+    }
+    .adresa {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        background-color:rgba(0, 0, 0, 0.8);
+	    color:white;
+        margin-top: 50px;
+    }
+    .adresa p, h1, h3{
+        font-size: 12px;
+    }
+    .mapa, #map {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        opacity: 1;
+        margin-top: 20px;
+    }
+    #footer {
+        font-weight: normal;
+        font-size: 10px;
+    }
+    #backbtn{
+        float: left;
+    }
+    #back > a > i{
+        font-size: 30px;
+        margin-top: 4px;
+    }
+    #btn {
+        color: #fff;
+        border: none;
+        background: transparent;
+    }
+    #btn > i {
+        font-size: 25px;
+        margin: auto;
+        margin-right: 5px;
+    }
+    #btn:hover{
+        color: red !important;
+        transition: 0.1s;
+    }
+    .btnn{
+        border: none;
+        outline: none;
+    }
+    #myBtn {
+        display: none;
+        position: fixed; 
+        bottom: 25px; 
+        right: 25px; 
+        z-index: 99; 
+        border: 4px solid red;
+        background-color: rgba(0, 0, 0, 0.25); 
+        border-radius: 50%;
+        color: red; 
+        cursor: pointer; 
+        margin: auto;
+        width: 60px;
+        height: 60px;  
+        transition: border 0.2s;
+    }
+
+    #myBtn:hover {
+        background-color: rgba(0, 0, 0, 0.35); 
+        color: white;
+        border: 8px solid red;
+        transition: border 0.2s;
+    }
+
+}
+
+
+
+
+
+
+
+
